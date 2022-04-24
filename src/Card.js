@@ -1,26 +1,22 @@
+// import statements at top
 import React from "react";
 
-// remember - this is an ES6 arrow fnctn
-const Card = (props) => {
+// this is an ES6 arrow fnctn
+// name, email & id props are recieved as parameters & destructured
+
+const Card = ({ name, email, id }) => {
   return (
-    <div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
-
-      <img alt='robots' src='https://robohash.org/test?200x200' />
-
+    <div className="tc bg-light-blue dib br3 pa3 ma2 grow bw2 shadow-5">
+      <img alt="robots" src={`https://robohash.org/${id}?200x200`} />
       <div>
-{/* hey look!! - comments in JSX are automatically inside curly braces */}
-{/* JS expressions must be in curly braces */}
-        <h2>{props.name}</h2>
-        <p>{props.email}</p>
-
+        <h2>{name}</h2>
+        <p>{email}</p>
       </div>
-
-
-
-
-
     </div>
   );
-};
+}
 
+// export statement at btm
 export default Card;
+
+
