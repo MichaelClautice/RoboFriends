@@ -1,12 +1,13 @@
-// import statements at top
+// ♦️ IMPORT STATEMENTS
 import React from "react";
 // ReactDOM is specific to browser DOM
 import ReactDOM from "react-dom";
 import "./index.css";
-import Card from "./Card.js";
+import CardList from "./CardList.js";
 import reportWebVitals from "./reportWebVitals";
 import "tachyons";
 import { robots } from './robots.js';
+// •••••••••••••••••••
 
 // ReactDOM pkg's render() function will render JSX into the "root"
 
@@ -16,14 +17,7 @@ import { robots } from './robots.js';
 
 // render() th Card components
 ReactDOM.render(
-  <div>
-    <Card id={robots[0].id} name={robots[0].name} email={robots[0].email}/>
-
-    <Card id={robots[1].id} name={robots[1].name} email={robots[1].email} />
-
-    <Card id={robots[2].id} name={robots[2].name} email={robots[2].email} />
-  </div>
-
+  <CardList robots={robots}/>
   , document.getElementById("root")
 );
 
