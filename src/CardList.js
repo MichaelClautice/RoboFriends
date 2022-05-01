@@ -5,16 +5,16 @@ import Card from "./Card";
 
 // destructured robot props as param
 // NOT the props from robots array
-const CardList = ({ robots }) => {
+const CardList = ({ robotsProps }) => {
   return (
     <div>
-      {robots.map((user, i) => {
+      {robotsProps.map((user, i) => {
         return (
           <Card
             key={i}
-            id={robots[i].id}
-            name={robots[i].name}
-            email={robots[i].email}
+            id={robotsProps[i].id}
+            name={robotsProps[i].name}
+            email={robotsProps[i].email}
           />
         );
       })}

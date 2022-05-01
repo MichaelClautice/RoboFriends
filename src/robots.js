@@ -1,4 +1,4 @@
-export const robots = [
+export const robotsArray = [
     {
       id: 1,
       name: 'Leanne Graham',
@@ -37,7 +37,7 @@ export const robots = [
     },
     {
       id: 7,
-      name: 'Kurtis Weissnat',
+      name: 'Kurtis Weissnat, Jr',
       username: 'Elwyn.Skiles',
       email: 'Telly.Hoeger@billy.biz'
     },
