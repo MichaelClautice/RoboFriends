@@ -5,13 +5,14 @@ import SearchBox from "./SearchBox";
 import { robotsArray } from "./robots.js";
 // •••••••••••••••••••
 
-// declare a Class Component
+// declare a Class Component for App
 // access React.Component's functions
 class App extends Component {
   // constructor() allocates memory & initializes th state obj
   constructor() {
     // super() calls th constructor. This is req'd to access vars of its parent class
     super()
+    // create the state obj
     // ‘this’ refers to th obj it belongs to
     this.state = {
       robotsProps: robotsArray,
@@ -20,6 +21,7 @@ class App extends Component {
   }
 
   onSearchChange = (userEvent) => {
+    console.log(userEvent.target.value)
     this.setState({ searchfield: userEvent.target.value });
   }
 
