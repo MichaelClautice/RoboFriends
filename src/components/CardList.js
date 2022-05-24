@@ -2,7 +2,6 @@
 import React from "react";
 import Card from "./Card";
 // •••••••••••••••••••
-
 // destructured robot props as param
 // NOT the props from robots array
 const CardList = ({ robotsProps }) => {
@@ -20,6 +19,6 @@ const CardList = ({ robotsProps }) => {
       })}
     </div>
   );
-}
+};
 // ♦️ EXPORT STATEMENT
 export default CardList;

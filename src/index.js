@@ -2,7 +2,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App"
+import App from "./containers/App";
 // import CardList from "./CardList.js";
 import reportWebVitals from "./reportWebVitals";
 import "tachyons";
@@ -13,8 +13,6 @@ import "tachyons";
 // ReactDOM pkg's render() function will render JSX into the "root" <div>
 
 // render() th App component
-ReactDOM.render(
-  <App />, document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
 reportWebVitals();
