@@ -14,6 +14,6 @@ import "tachyons";
 
 // render() th App component w React 18's createRoot() method
 // render App inside 'root'
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
 reportWebVitals();
