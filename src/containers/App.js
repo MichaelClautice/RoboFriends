@@ -4,6 +4,7 @@ import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 // import { robotsArray } from "./robots.js";
 import Scroll from "../components/Scroll";
+import ErrorBoundary from "../components/ErrorBoundary";
 import "./App.css";
 // •••••••••••••••••••
 // declare a Class Component for App
@@ -40,14 +41,16 @@ class App extends Component {
     // use ternary statement as alt to if-else statement
     // if the robotsProps.length is zero then a FALSE is rtrnd
     // use the not operator & make it TRUE or visa versa
-    return !robotsProps.length ? 
+    return !robotsProps.length ? (
       <h1>Loading</h1>
-     : (
+    ) : (
       <div className="tc">
         <h1 className="f1">Robo Friends</h1>
         <SearchBox searchChange={this.onSearchChange} />
         <Scroll>
-          <CardList robotsProps={filteredRobots} />
+          <ErrorBoundary>
+            <CardList robotsProps={filteredRobots} />
+          </ErrorBoundary>
         </Scroll>
       </div>
     );

@@ -12,7 +12,8 @@ import "tachyons";
 
 // ReactDOM pkg's render() function will render JSX into the "root" <div>
 
-// render() th App component
-ReactDOM.render(<App />, document.getElementById("root"));
+// render() th App component w React 18's createRoot() method
+// render App inside 'root'
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
 reportWebVitals();

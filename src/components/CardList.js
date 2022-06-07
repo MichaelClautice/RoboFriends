@@ -5,6 +5,10 @@ import Card from "./Card";
 // destructured robot props as param
 // NOT the props from robots array
 const CardList = ({ robotsProps }) => {
+  // temporary test if-statement to display the error mssg
+  // if (true) {
+  //   throw new Error("THIS IS AN ERROR")
+  // }
   return (
     <div>
       {robotsProps.map((user, i) => {
