@@ -1,4 +1,4 @@
-# RoboFriends https://michaelclautice.github.io/RoBoFriends/
+# RoboFriends https://michaelclautice.github.io/RoboFriends/
 ZTM React course
 
 # Getting Started with Create React App
