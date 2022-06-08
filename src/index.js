@@ -4,7 +4,6 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./containers/App";
 // import CardList from "./CardList.js";
-import reportWebVitals from "./reportWebVitals";
 import "tachyons";
 // does index.js need robotsArray?
 // import { robotsArray } from './robots.js';
@@ -16,4 +15,4 @@ import "tachyons";
 // render App inside 'root'
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
 
-reportWebVitals();
+
