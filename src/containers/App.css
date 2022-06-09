@@ -36,6 +36,7 @@ h1 {
 h1 {
   font-family: 'Courier Prime', monospace;
   font-weight: 200;
+  font-kerning: normal;
   color: #1a1b1c;
 }
 
